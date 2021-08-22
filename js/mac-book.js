@@ -73,11 +73,11 @@ function calculate(memory,storage,deliverycharge,code){
     let totalBalance = document.getElementById('total-cost');
     totalBalance.innerText= finalMemoryCost+finalStorageCost+finaldeliveryCost+parseInt(currentBalance);
 
-    //bonus section-1(Discount Total price Cost)
+    //bonus (Discount Total price Cost)
     let displayCost = document.getElementById('discount-price');
      displayCost.innerText= totalBalance.innerText;
 
-    //bonus section-2(Applying Promo Code)
+    //bonus (Applying Promo Code)
      code= document.getElementById('promo-code').value;
      if(code=='stevekaku'){
          const reducingAmount = parseFloat(totalBalance.innerText)*.20;
